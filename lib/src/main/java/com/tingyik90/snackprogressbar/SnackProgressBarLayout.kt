@@ -4,7 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.support.annotation.ColorRes
 import android.support.annotation.Keep
-import android.support.design.widget.BaseTransientBottomBar
+import android.support.design.snackbar.ContentViewCallback
 import android.support.design.widget.CoordinatorLayout
 import android.support.v4.content.ContextCompat
 import android.support.v4.view.ViewCompat
@@ -27,7 +27,7 @@ internal class SnackProgressBarLayout @JvmOverloads constructor(
         attrs: AttributeSet? = null,
         defStyleAttr: Int = 0)
     : LinearLayout(context, attrs, defStyleAttr),
-        BaseTransientBottomBar.ContentViewCallback {
+        ContentViewCallback {
 
     /* variables */
     companion object {
